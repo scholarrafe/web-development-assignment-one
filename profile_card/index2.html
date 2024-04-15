@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .profile-card {
+            width: 300px;
+            height: 550px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .profile-picture {
+            background-image: url(profil_image.jpg);
+            background-size: cover;
+            width: 150px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-color: #ccc;
+        }
+
+        .name {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        .occupation {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #999999;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #777777;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .section-content {
+            font-size: 16px;
+            color: #555555;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="profile-picture"></div>
+        <div class="name">Sara Riley</div>
+        <div class="occupation">Web Developer</div>
+        <div class="description">Passionate web developer with a keen eye for detail an
+            d a love for crafting seamless digital experiences.
+            Constantly learning and exploring new technologies to stay ahead in the ever-evolving
+             world of web
+             development</div>
+        <div class="contact-info">
+            <p>Email: sara.riley@example.com</p>
+            <p>Mobile: +1234567890</p>
+        </div>
+        <div class="sections">
+        <div class="section">
+            <div class="section-title">Projects <br>200</div>
+        </div>
+        <div class="section">
+            <div class="section-title">Following <br>5000</div>
+        </div>
+        <div class="section">
+            <div class="section-title">Followers<br>1000</div>
+        </div>
+        </div>
+        <div class="buttons">
+            <a href="#" class="button">Follow</a>
+            <a href="#" class="button">Hire Me</a>
+        </div>
+    </div>
+</body>
+</html>
